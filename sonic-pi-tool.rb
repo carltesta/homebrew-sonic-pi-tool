@@ -8,7 +8,7 @@ class SonicPiTool < Formula
   depends_on "rust"
 
   def install
-    system "cargo install --git https://github.com/lpil/sonic-pi-tool/ --force --root ", prefix
+    system "cargo install --force --root #{prefix} --git https://github.com/lpil/sonic-pi-tool/"
   end
 
 end
