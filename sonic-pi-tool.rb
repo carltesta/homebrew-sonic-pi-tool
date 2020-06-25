@@ -1,15 +1,15 @@
 require "formula"
 
 class SonicPiTool < Formula
-  homepage "https://github.com/lpil/sonic-pi-tool"
-  head "https://github.com/lpil/sonic-pi-tool"
-  sha256 "8424409d1e1162ec0c6c81e380018742f8c140efa1481d1f54732118fdcb45e0"
+  homepage "https://github.com/carltesta/sonic-pi-tool"
+  head "https://github.com/carltesta/sonic-pi-tool"
+  sha256 "552d13b2022e7a3b764186b182656caef13254e87cb0b5839f4972a20466f2de"
   desc "Controlling Sonic Pi from the command line."
 
   depends_on "rust"
 
   def install
-    system "cargo install --force --root #{prefix} --git https://github.com/lpil/sonic-pi-tool/"
+    system "cargo install --force --root #{prefix} --git https://github.com/carltesta/sonic-pi-tool/"
   end
 
 end
